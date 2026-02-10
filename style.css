@@ -1,83 +1,86 @@
-* {
+/* Corps de page */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background-color: #2b7fd2;
-    color: #333;
-    line-height: 1.6;
-}
-
-.cv {
-    width: 800px;
-    max-width: 90%;
-    margin: 40px auto;
-    background: #ffffff;
-    padding: 40px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    font-size: 36px;
-    letter-spacing: 1px;
-}
-
-header .title {
-    font-size: 18px;
-    color: #555;
-    margin-top: 5px;
-}
-
-header .contact {
-    font-size: 14px;
-    color: #777;
-    margin-top: 10px;
-}
-
-section {
-    margin-bottom: 25px;
-}
-
-section h2 {
-    font-size: 22px;
-    border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
     color: #222;
 }
 
-.item {
-    margin-bottom: 15px;
+/* Conteneur principal */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
 }
 
-.item h3 {
-    font-size: 18px;
-    margin-bottom: 3px;
+/* En-tête (Nom + résumé) */
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.item .date {
-    font-size: 14px;
-    color: #888;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.hero .subtitle {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+/* Liens sociaux */
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #0366d6;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    margin-bottom: 1.8rem;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Liste compétences */
+.skills ul {
+    list-style: none;
+    padding: 0;
 }
 
 .skills li {
-    list-style: none;
-    background: #e8ecf1;
-    padding: 6px 12px;
+    display: inline-block;
+    background: #eee;
+    margin: .3rem;
+    padding: .5rem 1rem;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 0.95rem;
 }
+
+/* Expérience professionnelle */
+.experience .job {
+    margin-bottom: 1rem;
+}
+
+.experience .job h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.experience .job span {
+    font-size: .95rem;
+    color: #666;
+}
+

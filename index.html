@@ -2,80 +2,54 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Prénom Nom</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="cv">
+<div class="container">
 
-        <header>
-            <h1>Prénom Nom</h1>
-            <p class="title">Intitulé du poste / Profil professionnel</p>
-            <p class="contact">
-                Email : prenom.nom@email.com · Téléphone : 06 00 00 00 00 · Ville, Pays
-            </p>
-        </header>
+    <header class="hero">
+        <h1>Prénom NOM</h1>
+        <p class="subtitle">Développeur·se Web • Backend • Frontend</p>
 
-        <section>
-            <h2>Profil</h2>
-            <p>
-                Bref résumé professionnel : compétences clés, expérience principale
-                et objectifs de carrière en quelques lignes.
-            </p>
-        </section>
+        <nav class="links">
+            <a href="https://github.com/tonprofil" target="_blank">GitHub</a>
+            <a href="https://dev.to/tonprofil" target="_blank">Dev.to</a>
+        </nav>
+    </header>
 
-        <section>
-            <h2>Expériences professionnelles</h2>
+    <section class="about">
+        <h2>À propos</h2>
+        <p>Passionné·e par le développement web, je crée des interfaces et services performants.</p>
+    </section>
 
-            <div class="item">
-                <span class="date">2022 – Présent</span>
-                <h3>Poste occupé – Entreprise</h3>
-                <p>
-                    Description des missions principales, réalisations,
-                    responsabilités et outils utilisés.
-                </p>
-            </div>
+    <section class="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
 
-            <div class="item">
-                <span class="date">2020 – 2022</span>
-                <h3>Poste occupé – Entreprise</h3>
-                <p>
-                    Description des missions principales et résultats obtenus.
-                </p>
-            </div>
-        </section>
+    <section class="experience">
+        <h2>Expériences</h2>
+        <div class="job">
+            <h3>Développeur Web – Entreprise</h3>
+            <span>2023 – Présent</span>
+            <p>Description du rôle.</p>
+        </div>
+    </section>
 
-        <section>
-            <h2>Formation</h2>
+    <section class="formation">
+        <h2>Formation</h2>
+        <p>Master Informatique – Université X</p>
+    </section>
 
-            <div class="item">
-                <span class="date">2018 – 2020</span>
-                <h3>Diplôme – Établissement</h3>
-                <p>Spécialité ou informations pertinentes</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Compétences</h2>
-            <ul class="skills">
-                <li>HTML / CSS</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-                <li>Organisation</li>
-                <li>Travail en équipe</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Langues</h2>
-            <ul>
-                <li>Français – Langue maternelle</li>
-                <li>Anglais – Niveau B2</li>
-            </ul>
-        </section>
-
-    </div>
+</div>
 
 </body>
 </html>
