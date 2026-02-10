@@ -21,6 +21,12 @@ header {
     margin-bottom: 40px;
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between; /* espace entre h1 et bouton */
+    align-items: center;           /* alignement vertical */
+}
+
 header h1 {
     margin: 0;
     font-size: 2.2em;
@@ -103,4 +109,32 @@ li {
 
 .projects li {
     margin-bottom: 10px;
+}
+
+/* Bouton PDF */
+button#exportPdf {
+    background-color: #2a7ae2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#exportPdf:hover {
+    background-color: #1f5bb5;
+}
+
+
+@media print {
+    button#exportPdf {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+        background: white;
+        color: black;
+    }
 }

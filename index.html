@@ -9,7 +9,11 @@
 <body>
     <div class="container">
         <header>
-            <h1>Thierno Sambegou DIALLO</h1>
+            <div  class="header-top">
+                 <h1>Thierno Sambegou DIALLO</h1>
+                <button id="exportPdf">Exporter en PDF</button>
+            </div>
+           
             <p>Développeur FULL STACK</p>
         </header>
 
@@ -22,15 +26,15 @@
             <h2>Compétences</h2>
             <div class="skills">
                 <h3>Langages</h3>
-                <p>Java 7/8/11/17/21, JavaScript, SQL, PL/SQL, Python, Dart</p>
+                <p>Java 8/11/17/21/25, JavaScript, SQL, PL/SQL</p>
                 <h3>Frameworks</h3>
-                <p>Spring Boot, Angular, React JS, Apache Camel, Mule, JUnit, Mockito</p>
+                <p>Spring Boot, Angular</p>
                 <h3>Bases de données</h3>
-                <p>MySQL, PostgreSQL, MongoDB, Oracle, Elasticsearch</p>
+                <p>MySQL, PostgreSQL, redis, Elasticsearch</p>
                 <h3>Cloud & DevOps</h3>
                 <p>AWS, Docker, Kubernetes, Jenkins, GitLab CI, SonarQube, Terraform, Helm, ArgoCD</p>
                 <h3>Architecture & Méthodologies</h3>
-                <p>Microservices, DDD, Hexagonal, Event-Driven, Clean Architecture, Agile Scrum/Kanban</p>
+                <p>Microservices, DDD (Domain-Driven Design), Hexagonal Architecture, Event-Driven Architecture, Clean Architecture</p>
             </div>
         </section>
 
@@ -87,3 +91,8 @@
     </div>
 </body>
 </html>
+<script>
+    document.getElementById("exportPdf").addEventListener("click", function() {
+        window.print();
+    });
+</script>
