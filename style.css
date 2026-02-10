@@ -1,86 +1,106 @@
-/* Corps de page */
+/* Global */
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #222;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-/* Conteneur principal */
 .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 2rem;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* En-tête (Nom + résumé) */
-.hero {
+/* Header */
+header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 40px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.3rem;
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
 }
 
-.hero .subtitle {
-    font-size: 1.4rem;
-    color: #555;
+header p {
+    margin: 5px 0;
+    font-style: italic;
 }
 
-/* Liens sociaux */
-.links {
-    margin-top: 1rem;
-}
-
-.links a {
-    margin: 0 1rem;
+.contact a {
     text-decoration: none;
-    color: #0366d6;
-    font-weight: bold;
+    color: #0073e6;
+    margin: 0 5px;
 }
 
 /* Sections */
 section {
-    margin-bottom: 1.8rem;
+    margin-bottom: 30px;
 }
 
 section h2 {
-    font-size: 1.6rem;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 0.3rem;
-    margin-bottom: 0.8rem;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-/* Liste compétences */
-.skills ul {
-    list-style: none;
-    padding: 0;
+/* Skills */
+.skills h3 {
+    margin: 10px 0 5px 0;
+    color: #0073e6;
 }
 
-.skills li {
-    display: inline-block;
-    background: #eee;
-    margin: .3rem;
-    padding: .5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.95rem;
+.skills p {
+    margin: 0 0 10px 0;
 }
 
-/* Expérience professionnelle */
-.experience .job {
-    margin-bottom: 1rem;
+/* Experience */
+.job {
+    margin-bottom: 20px;
 }
 
-.experience .job h3 {
+.job h3 {
     margin: 0;
-    font-size: 1.2rem;
+    color: #0073e6;
 }
 
-.experience .job span {
-    font-size: .95rem;
-    color: #666;
+.job span {
+    font-size: 0.9em;
+    color: #555;
 }
 
+.job p {
+    margin: 5px 0 0 0;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.clients {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.clients > li {
+    margin-bottom: 15px;
+}
+
+.projects {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.projects li {
+    margin-bottom: 10px;
+}
